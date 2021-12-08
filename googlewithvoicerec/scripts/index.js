@@ -1,5 +1,4 @@
 
-
   var fileSelector = document.createElement("input");
   fileSelector.setAttribute("type", "file");
   const searchForm = document.querySelector("#search-form");
@@ -12,6 +11,7 @@
 
   recognition.onstart = function () {
     action.innerHTML = "<small>listening, please speak......</small>";
+    window.speechSynthesis.speak("You can speak now");
     console.log("You can speak now!!!");
   };
 
@@ -38,26 +38,12 @@
     else if (text.includes("my birthday"))
       speech.text =
         "Do you think you're famous! How the heck would I know your birthday!";
-    else if (text.includes("love me"))
-      speech.text = "Of course, not! You piece of junk!";
-    else if (text.includes("search"))
-      window.location.href = `https://www.google.com/search?`;
-    else if (text.includes("My YouTube")) window.location.href = "youtube.html";
+    else if (text.includes("My YouTube")) window.location.href = "https://mehtab39.github.io/myprojects/Youtube/index.html";
     else if (text.includes("YouTube"))
       window.location.href = `https://www.youtube.com/results?search_query=${text}`;
-    else if (text.includes("Surname")) speech.text = "Your surname is Gill";
     else if (text.includes("owner"))
       speech.text = "My owner is Mehtab singh gill";
-    else if (
-      text.includes("Factorial") ||
-      text.includes("fibbonaci") ||
-      text.includes("Exponent") || 
-      text.includes("Fibo nachi") ||
-      text.includes("Fibonacci") ||
-      text.includes("Trigonometry")
-    )speech.text = "hmmm.. do you think I am that smart";
-    else if (text.includes("dumb"))
-    speech.text="Fuck off";
+   
     window.speechSynthesis.speak(speech);
     searchFormInput.value = speech.text;
   }
