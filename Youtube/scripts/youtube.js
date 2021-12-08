@@ -3,8 +3,6 @@
 
   var top =
     "https://www.googleapis.com/youtube/v3/videos?part=contentDetails&chart=mostPopular&regionCode=IN&key=AIzaSyDHlBRwSR7p7OK7N7dj5is1OdOM-ZLQ9E8";
-
-
   async function searchVideos() {
     var query = document.getElementById("query").value;
     var res = await fetch(
@@ -28,7 +26,6 @@
   function appendVideos2(video_data) {
     videos.innerHTML = null;
     video_data.forEach((Id) => {
-      // console.log("video:", videoId);
       let div = document.createElement("div");
 
       div.innerHTML = `<iframe width="310" height="315" src="https://www.youtube.com/embed/${Id.id}"></iframe>`;
@@ -39,11 +36,8 @@
   function appendVideos(video_data) {
     videos.innerHTML = null;
     video_data.forEach(({ id: { videoId } }) => {
-      // console.log("video:", videoId);
       let div = document.createElement("div");
-      // console.log(videoId)
       div.innerHTML = `<a href="myyoutube.html"><iframe width="310" height="315" src="https://www.youtube.com/embed/${videoId}"></iframe></a>`;
-
       videos.append(div);
     });
   }
