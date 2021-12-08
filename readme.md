@@ -15,6 +15,5 @@ These are some of my solo projects. You can click on the below links to have a l
     This is very basic to-do app. You can create list, remove it, mark it complete.
 * [Translator](https://mehtab39.github.io/myprojects/translator/index.html)
     This is translator app. User can type sentence and can get the string translated to the selected language.
-* [Google search](https://mehtab39.github.io/myprojects/googlewithvoicerec/index.html)
-   This app included voice recoginition. User can search by using keyword "google" to get their phrase searched on the original google app.
+
 
