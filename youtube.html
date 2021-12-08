@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      :root {
+        --primary-color: #22254b;
+        --secondary-color: #373b69;
+      }
+      body {
+        background-color: var(--primary-color);
+        margin: 0;
+      }
+      .header {
+        padding: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        background-color: var(--secondary-color);
+      }
+      #videos {
+        /* background-color: black; */
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        justify-content: center;
+        grid-gap: 30px;
+      }
+      #query,
+      button {
+        background-color: transparent;
+        border: 2px solid var(--primary-color);
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        font-size: 1rem;
+        color: white;
+      }
+      button {
+        background-color: black;
+        border-radius: 10px;
+        color: aliceblue;
+      }
+      #query:focus {
+        outline: 0;
+        background-color: var(--primary-color);
+      }
+      #query:placeholder {
+        color: #7378c5;
+      }
+      img {
+        height: 50px;
+        float: left;
+        margin-right: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img
+        src="https://www.interstellarrift.com/wiki/images/d/d8/Youtube-logo-png-photo-0.png"
+        alt=""
+      />
+
+      <a href="youtubesignin.html"
+        ><button id="signinbtn" style="margin-right: 100px; width: 200px">
+          Sign in
+        </button></a
+      >
+      <p style="margin-right: 500px" id="showname"></p>
+      <input type="text" id="query" placeholder="Search for a Video" />
+
+      <button onclick="searchVideos()">Search</button>
+    </div>
+
+    <div id="videos"></div>
+  </body>
+</html>
+
+<script>
+  let videos = document.getElementById("videos");
+
+  var top =
+    "https://www.googleapis.com/youtube/v3/videos?part=contentDetails&chart=mostPopular&regionCode=IN&key=AIzaSyDHlBRwSR7p7OK7N7dj5is1OdOM-ZLQ9E8";
+
+  //   var APIKEY = "AIzaSyDHlBRwSR7p7OK7N7dj5is1OdOM-ZLQ9E8";
+
+  async function searchVideos() {
+    var query = document.getElementById("query").value;
+    var res = await fetch(
+      `https://youtube.googleapis.com/youtube/v3/search?q=${query}&type=video&key=AIzaSyDHlBRwSR7p7OK7N7dj5is1OdOM-ZLQ9E8&maxResults=20`
+    );
+    let data = await res.json();
+
+    console.log(data.items[2].id.videoId);
+    appendVideos(data.items);
+  }
+  async function topVideos() {
+    let res = await fetch(
+      "https://www.googleapis.com/youtube/v3/videos?part=contentDetails&chart=mostPopular&regionCode=IN&key=AIzaSyDHlBRwSR7p7OK7N7dj5is1OdOM-ZLQ9E8&maxResults=20"
+    );
+    let data = await res.json();
+
+    console.log(data.items[2].id);
+    appendVideos2(data.items);
+  }
+
+  function appendVideos2(video_data) {
+    videos.innerHTML = null;
+    video_data.forEach((Id) => {
+      // console.log("video:", videoId);
+      let div = document.createElement("div");
+
+      div.innerHTML = `<iframe width="310" height="315" src="https://www.youtube.com/embed/${Id.id}"></iframe>`;
+      videos.append(div);
+    });
+  }
+
+  function appendVideos(video_data) {
+    videos.innerHTML = null;
+    video_data.forEach(({ id: { videoId } }) => {
+      // console.log("video:", videoId);
+      let div = document.createElement("div");
+      // console.log(videoId)
+      div.innerHTML = `<a href="myyoutube.html"><iframe width="310" height="315" src="https://www.youtube.com/embed/${videoId}"></iframe></a>`;
+
+      videos.append(div);
+    });
+  }
+
+  topVideos();
+
+  var showing = document.getElementById("showname");
+  if (localStorage.getItem("mybucket")) {
+    if (localStorage.getItem("mybucket").length !== 0) {
+      let mycart = JSON.parse(localStorage.getItem("mybucket"));
+      console.log(mycart[0]);
+      showing.textContent = mycart[0];
+      let sign = document.getElementById("signinbtn");
+      sign.style.display = "none";
+    }
+  }
+</script>
