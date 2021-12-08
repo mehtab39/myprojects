@@ -1,0 +1,8 @@
+form > div {
+    margin: 10px;
+}
+td {
+    border: 1px solid gray;
+    min-height: 100px;
+    padding: 10px;
+}
