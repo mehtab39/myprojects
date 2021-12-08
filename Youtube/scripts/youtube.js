@@ -4,7 +4,6 @@
   var top =
     "https://www.googleapis.com/youtube/v3/videos?part=contentDetails&chart=mostPopular&regionCode=IN&key=AIzaSyDHlBRwSR7p7OK7N7dj5is1OdOM-ZLQ9E8";
 
-  //   var APIKEY = "AIzaSyDHlBRwSR7p7OK7N7dj5is1OdOM-ZLQ9E8";
 
   async function searchVideos() {
     var query = document.getElementById("query").value;
