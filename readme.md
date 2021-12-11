@@ -19,7 +19,7 @@
    # Features
     * Voice recognition
     * Get weather details by using "Weather" phrase before "Location" name 
-    * Direct Google and youtube search by using the phrase "Google" or "Youtube"
+    * Direct Google and YouTube search by using the phrase "Google" or "YouTube"
     
 
 
