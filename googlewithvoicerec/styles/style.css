@@ -5,12 +5,23 @@
   box-sizing: border-box;
 }
 body {
+
   font-family: "Montserrat", sans-serif;
-  background-color: #025677;
+  background-image: url("https://www.digitalplatforms.co.za/wp-content/uploads/2015/11/Website-Design-Background.png");
   color: #fff;
+  background-repeat: none;
+  background-size: cover;
+}
+.logo{
+  padding: 30px 50px;
+  margin-left: 37%;
+  justify-content: center;
 }
 .container {
   padding: 30px 50px;
+  display: grid;
+  margin-left: 10%;
+  grid-template-columns: 80% 20%;
 }
 #search-form {
   width: 30%;
@@ -24,47 +35,58 @@ body {
   border: 2px solid #ccc;
   border-radius: 2px;
 }
-#search-form button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  width: 3rem;
-  text-align: center;
-  font-size: 1.75rem;
-  cursor: pointer;
-  color: #333;
-}
+
 button {
-  justify-content: center;
-  margin-left: 46.5%;
+  /* justify-content: center; */
   height: 50px;
   width: 100px;
-  margin-top: 20px;
+  margin-left:-130%;
   font-size: larger;
 }
-.info {
+#action {
   margin-top: 0.5rem;
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 1rem;
+  margin-left: 40%;
+}
+.weather{
+  margin-top: 1.5rem;
+  text-align: center;
+  justify-content: center;
 }
 
-@media (max-width: 1200px) {
-  #search-form {
-    width: 50%;
+
+@media (max-width: 500px) {
+  .container{
+    display:block;
+    width: 80%;
+    margin-right: 15%;
+
   }
-}
-@media (max-width: 768px) {
-  .container {
-    padding: 30px 35px;
+  .logo{
+    margin-left: 5%;
+    justify-content: center;
+    margin-left: 0px;
   }
-  #search-form {
+  button {
+    margin-top: 3%;
+    margin-left: 30%;
+    height: 50px;
+    width: 100px;
+    font-size: larger;
+  }
+  #search-form{
     width: 100%;
+    position: static;
   }
-  .info {
-    font-size: 0.5rem;
+  #action {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 30%;
   }
+  body {
+    background: url('https://i.pinimg.com/originals/07/34/da/0734da8d89d9d1c9ea663152190ef8ec.jpg') center center fixed no-repeat;
+  }
+
 }

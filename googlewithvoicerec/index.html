@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voice recognition</title>
     <link rel="stylesheet" href="styles/style.css">
-
-
   </head>
   <body>
+    <div class="logo">
+      <img src="https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png" height="100px" alt="" class="src">
+    </div>
     <div class="container">
+      <div>
       <form
         action="https://www.google.com/search"
         method="get"
@@ -24,11 +26,18 @@
           autocomplete="off"
           autofocus
         />
-        <!-- <button type="button"></button> -->
       </form>
-      <button id="btn" onclick="recognition.start()">Record</button>
-      <span id="action"></span></p>
     </div>
+    <div>
+       <button id="btn" onclick="recognition.start()">Record</button>
+    </div>
+      
+    </div>
+    <span id="action"></span></p>
+    <div class="weather">
+     <p id="city"> Check weather</span></p>
+    </div>
+  
   </body>
 </html>
 <script src="scripts/index.js"></script>
