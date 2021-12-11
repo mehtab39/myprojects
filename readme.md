@@ -1,5 +1,5 @@
-## Welcome to my repository
-These are some of my solo projects. You can click on the below links to have a look!
+## Welcome to the repository
+>These are some of my solo projects. You can click on the below links to have a look!
 
 ## Projects
 
