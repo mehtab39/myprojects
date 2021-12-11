@@ -9,6 +9,7 @@ body {
   font-family: "Montserrat", sans-serif;
   background-image: url("Website-Design-Background.png");
   color: #fff;
+  
   background-repeat: none;
   background-size: cover;
 }
@@ -56,7 +57,7 @@ button {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .container{
     display:block;
     width: 80%;
@@ -66,7 +67,6 @@ button {
   .logo{
     margin-left: 5%;
     justify-content: center;
-    margin-left: 0px;
   }
   button {
     margin-top: 3%;
