@@ -99,3 +99,44 @@ footer{
 .selected{
     background-color: blue;
 }
+
+@media (max-width: 600px) {
+    .tile{
+        width: 20px;
+        height: 20px;
+        font-size:15pt;
+    }
+    #board{
+        width: 200px;
+        height: 200px;
+    }
+    .rightBorder{
+        border-right:1px solid black;
+    }
+    
+    .bottomBorder{
+        border-bottom:1px solid black;
+    }
+
+    #number-container{
+        margin-top: 15px;
+    }
+
+    #number-container>p{
+        border: 1px solid black;
+        border-radius: 20%;
+        width: 20px;
+        height: 20px;
+        font-size: 15pt;
+        margin-left: 50px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        text-align: center;
+        }
+        #setup-game{
+            display: block;
+            justify-content: center;
+        
+        }
+
+}
