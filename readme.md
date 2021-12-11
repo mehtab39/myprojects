@@ -1,4 +1,4 @@
->## Welcome to the repository
+## Welcome to the repository
 >These are some of my solo projects. You can click on the below links to have a look!
 
 ## Projects
