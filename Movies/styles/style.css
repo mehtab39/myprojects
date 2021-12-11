@@ -184,6 +184,18 @@ main {
   margin-bottom: 100px;
   margin-right: 30px;
 }
-/* #signinbtn{
-  display: none;
-} */
+@media (max-width: 600px) {
+  main {
+    display: block;
+    justify-content: center;
+    margin-left:10%;
+  }
+  header {
+    padding: 1rem;
+    justify-content: center;
+  }
+  #mainimg{
+    height:  20em;
+  }
+}
+

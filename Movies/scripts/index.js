@@ -27,7 +27,7 @@ function showMovies(data) {
     let movieEl = document.createElement("div");
     movieEl.classList.add("movie");
     movieEl.innerHTML = `
-         <img src="${IMG_URL + poster_path}">
+         <img id="mainimg" src="${IMG_URL + poster_path}">
       <div class="movie-info">
         <h3>${title}</h3>
         <span class="${getcolor(vote_average)}">${vote_average}</span>
