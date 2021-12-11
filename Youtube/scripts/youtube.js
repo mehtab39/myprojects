@@ -28,7 +28,7 @@
     video_data.forEach((Id) => {
       let div = document.createElement("div");
 
-      div.innerHTML = `<iframe width="310" height="315" src="https://www.youtube.com/embed/${Id.id}"></iframe>`;
+      div.innerHTML = `<iframe width="280" height="315" src="https://www.youtube.com/embed/${Id.id}"></iframe>`;
       videos.append(div);
     });
   }

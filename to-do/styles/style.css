@@ -6,3 +6,9 @@ td {
     min-height: 100px;
     padding: 10px;
 }
+
+#container{
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 5%;
+}

@@ -10,20 +10,20 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Bai-Bai -- ARJAN DHILLON", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Break-out--Himmat sandhu", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
-    {songName: "Chu gon do -- Karan aujla", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
-    {songName: "Churi --khan bheni ala", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
-    {songName: "kalli sohni -- ARJAN DHILLON", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
-    {songName: "Love the way youn lie- Eminem", filePath: "songs/2.mp3", coverPath: "covers/6.jpg"},
-    {songName: "Tokyo drift", filePath: "songs/2.mp3", coverPath: "covers/7.jpg"},
-    {songName: "Pehla wale-- Simar doraha", filePath: "songs/2.mp3", coverPath: "covers/8.jpg"},
-    {songName: "Rubicon--Amrit maan", filePath: "songs/2.mp3", coverPath: "covers/9.jpg"},
-    {songName: "Shape of you", filePath: "songs/4.mp3", coverPath: "covers/10.jpg"},
+    {songName: "Bai-Bai -- ARJAN DHILLON", filePath: "songs/1.mp3"},
+    {songName: "Break-out--Himmat sandhu", filePath: "songs/2.mp3"},
+    {songName: "Chu gon do -- Karan aujla", filePath: "songs/3.mp3"},
+    {songName: "Churi --khan bheni ala", filePath: "songs/4.mp3"},
+    {songName: "kalli sohni -- ARJAN DHILLON", filePath: "songs/5.mp3"},
+    {songName: "Love the way youn lie- Eminem", filePath: "songs/2.mp3"},
+    {songName: "Tokyo drift", filePath: "songs/2.mp3"},
+    {songName: "Pehla wale-- Simar doraha", filePath: "songs/2.mp3"},
+    {songName: "Rubicon--Amrit maan", filePath: "songs/2.mp3"},
+    {songName: "Shape of you", filePath: "songs/4.mp3"},
 ]
 
 songItems.forEach((element, i)=>{ 
-    element.getElementsByTagName("img")[0].src = songs[i].coverPath; 
+
     element.getElementsByClassName("songName")[0].innerText = songs[i].songName; 
 })
  
@@ -65,6 +65,8 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
     element.addEventListener('click', (e)=>{ 
         makeAllPlays();
         songIndex = parseInt(e.target.id);
+        // let x= document.getElementById(e.target.id)
+        // x.parentElement.parentElement.parentElement.firstChild.nextSibling.src="playing.gif";
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
         audioElement.src = `songs/${songIndex+1}.mp3`;

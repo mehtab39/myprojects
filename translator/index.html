@@ -18,6 +18,13 @@
         width: 600px;
     }
 
+    @media (max-width: 600px) {
+      input{
+        height: 150px;
+        width: 300px;
+    }
+    }
+
     
   </style>
   <body>
@@ -25,8 +32,7 @@
       <label>Choose the Language</label>
       <select  id="Langs" ></select>
      <hr>
-       
-      <input placeholder="enter the text" id="enter"> </input>
+     <input placeholder="enter the text" id="enter"> </input>
       <input id="get"> </input>
       <br />
       <button id="button" onclick="getData()">translate</button>

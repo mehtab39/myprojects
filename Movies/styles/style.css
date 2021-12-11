@@ -175,8 +175,7 @@ main {
 }
 #movies {
   height:100px;
-  width: 216px;
-   
+  width: 216px;  
   border-top: none;
   overflow: hidden;
   float: right;

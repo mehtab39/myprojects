@@ -50,3 +50,12 @@ img {
   float: left;
   margin-right: 300px;
 }
+
+@media (max-width: 600px) {
+  #videos {
+    margin-top: 30px;
+    display: block;
+    justify-content: center;
+    margin-left: 15%;
+  }  
+}
