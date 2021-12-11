@@ -16,7 +16,7 @@
 * [Translator](https://mehtab39.github.io/myprojects/translator/index.html)
     This is translator app. User can type sentence and can get the string translated to the selected language.
 * [Voice Recognition](https://mehtab39.github.io/myprojects/googlewithvoicerec/index.html)
-   #features
+   # Features
     * Voice recognition
     * Get weather details by using "Weather" phrase before "Location" name 
     * Direct Google and youtube search by using the phrase "Google" or "Youtube"
