@@ -1,6 +1,13 @@
 ## Welcome to the repository
 >These are some of my solo projects. You can click on the below links to have a look!
 
+## How to run the app
+* Clone the repository "https://github.com/mehtab39/myprojects"
+* Inside the parent folder, change directory to the project you want to run
+* From the directory right click on index.html and copy path
+* Now go to browser and paste the copied path and press enter
+* The app is ready to run
+
 ## Projects
 
 * [Youtube](https://mehtab39.github.io/myprojects/Youtube/index.html)
