@@ -32,9 +32,7 @@ getImages()
 
 function lazyload() {
     var lazyloadImages = document.querySelectorAll(".lazy");    
-    console.log('lazyloadImages:', lazyloadImages)
     var lazyloadThrottleTimeout; 
-
     function lazyload () {
       if(lazyloadThrottleTimeout) {
         clearTimeout(lazyloadThrottleTimeout);
