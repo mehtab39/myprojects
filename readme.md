@@ -19,7 +19,7 @@
 * [Youtube](https://mehtab39.github.io/myprojects/Youtube/index.html)
       This is a clone of the YouTube application. You can watch videos and search for more videos from the YouTube server.[Demo](https://mehtab39.github.io/myprojects/Youtube/index.html)
 * [Binary Search](https://mehtab39.github.io/myprojects/binarysearch/index.html) 
- This application visualize the popular binary search using css animation and transform properties. Just enter the array in the string format (elements seperated by the spaces) and the target element and the application will help you find the element in the array [Demo](https://mehtab39.github.io/myprojects/binarysearch/index.html)
+ This application visualize the popular binary search using css animation and transform properties. Just enter the array in the string format (elements seperated by the spaces) and the target element and the application will help you find the element in the array using the binary search algorithm[Demo](https://mehtab39.github.io/myprojects/binarysearch/index.html)
 
 * [Movies](https://mehtab39.github.io/myprojects/Movies/index.html)
      This is a movie application. You can search for movies and can find the data related to the movies such as description, images and rating. [Demo](https://mehtab39.github.io/myprojects/Movies/index.html)
