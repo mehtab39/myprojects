@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+}
+
+.body{
+    width: 50%;
+    height: 75vh;
+    margin-left: 25%;
+    margin-top: 2%;
+   border: 1px solid black;
+    overflow-y: scroll;
+}
+
+#container div{
+    padding: 2%;
+    border: 1px solid black;
+}
+h1{
+    margin-top: 1%;
+}
+
+.scrollmsg{
+    color: blueviolet;
+    font-size: 35px;
+
+}
+#msg{
+    color: red;
+    font-size:35px;
+}
