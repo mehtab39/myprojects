@@ -3,7 +3,6 @@ var container=  document.getElementById("container");
 var body = document.querySelector('.body')
 
 const addData = ()=>{
-     console.log('container:', container)
      for(let i=0;i<25;i++){
          counter++;
          let div =  document.createElement("div");
