@@ -1,0 +1,7 @@
+.btns{
+    width: 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+
