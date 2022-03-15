@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    :root {
+      --primary-color: #22254b;
+      --secondary-color: #373b69;
+    }
+    body {
+      background-color: var(--primary-color);
+      margin: 0;
+    }
+
+    #main {
+      height: 600px;
+   
+      width: 70%;
+      margin-left: 15%;
+    }
+
+    h1 {
+      margin-left: 45%;
+      color: white;
+    }
+
+    div{
+        color: aliceblue;
+    }
+
+    form {
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+    span{
+         float: inline;
+          color:white;
+          margin-top: -100px;
+      }
+      img{
+          height: 200px;
+      }
+  </style>
+  <body>
+    <form id="form">
+      <input
+        oninput="searching()"
+        type="text"
+        placeholder="search.."
+        id="search"
+        class="search"
+      />
+     
+    </form>
+    <h1>News</h1>
+    <div id="main">
+       
+    </div>
+  </body>
+</html>
+<script src="news.js"></script>
